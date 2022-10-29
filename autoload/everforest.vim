@@ -161,8 +161,7 @@ function! everforest#get_palette(background, colors_override) "{{{
   endif "}}}
 
 " spider colored section "{{{
-  if a:background ==# 'sugar' "{{{
-      " tea
+  if a:background ==# 'gelatin' "{{{
     let palette1 = {
       \ 'bg0':        ['#2b3339',   '235'],
       \ 'bg1':        ['#323c41',   '236'],
@@ -175,7 +174,57 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ 'bg_green':   ['#404d44',   '22'],
       \ 'bg_blue':    ['#394f5a',   '17'],
       \ 'bg_yellow':  ['#4a4940',   '136'],
-      \ }
+      \ } "}}}
+  elseif a:background ==# 'cookie' "{{{
+    let palette1 = {
+      \ 'bg0':        ['#262626',   '235'],
+      \ 'bg1':        ['#323c41',   '236'],
+      \ 'bg2':        ['#3a454a',   '237'],
+      \ 'bg3':        ['#445055',   '238'],
+      \ 'bg4':        ['#4c555b',   '239'],
+      \ 'bg5':        ['#53605c',   '240'],
+      \ 'bg_visual':  ['#503946',   '52'],
+      \ 'bg_red':     ['#4e3e43',   '52'],
+      \ 'bg_green':   ['#404d44',   '22'],
+      \ 'bg_blue':    ['#394f5a',   '17'],
+      \ 'bg_yellow':  ['#4a4940',   '136'],
+      \ } "}}}
+    " chocolate "{{{
+  else
+    let palette1 = {
+      \ 'bg0':        ['#1c1c1c',   '235'],
+      \ 'bg1':        ['#323c41',   '236'],
+      \ 'bg2':        ['#3a454a',   '237'],
+      \ 'bg3':        ['#445055',   '238'],
+      \ 'bg4':        ['#4c555b',   '239'],
+      \ 'bg5':        ['#53605c',   '240'],
+      \ 'bg_visual':  ['#503946',   '52'],
+      \ 'bg_red':     ['#4e3e43',   '52'],
+      \ 'bg_green':   ['#404d44',   '22'],
+      \ 'bg_blue':    ['#394f5a',   '17'],
+      \ 'bg_yellow':  ['#4a4940',   '136'],
+      \ } "}}}
+  endif
+
+  if &background ==# 'light' "{{{
+    let palette2 = {
+      \ 'fg':         ['#d3c6aa',   '223'],
+      \ 'red':        ['#e67e80',   '167'],
+      \ 'orange':     ['#e69875',   '208'],
+      \ 'yellow':     ['#dbbc7f',   '214'],
+      \ 'green':      ['#a7c080',   '142'],
+      \ 'aqua':       ['#83c092',   '108'],
+      \ 'blue':       ['#7fbbb3',   '109'],
+      \ 'purple':     ['#d699b6',   '175'],
+      \ 'grey0':      ['#7a8478',   '243'],
+      \ 'grey1':      ['#859289',   '245'],
+      \ 'grey2':      ['#9da9a0',   '247'],
+      \ 'statusline1':['#a7c080',   '142'],
+      \ 'statusline2':['#d3c6aa',   '223'],
+      \ 'statusline3':['#e67e80',   '167'],
+      \ 'none':       ['NONE',      'NONE']
+      \ } "}}}
+  elseif &background ==# 'dark' "{{{
     let palette2 = {
       \ 'fg':         ['#5c6a72',   '242'],
       \ 'red':        ['#f85552',   '160'],
@@ -192,22 +241,9 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ 'statusline2':['#708089',   '242'],
       \ 'statusline3':['#e66868',   '160'],
       \ 'none':       ['NONE',      'NONE']
-      \ } " }}}
-  elseif a:background ==# 'chocolate' "{{{
-    let palette1 = {
-      \ 'bg0':        ['#1c1c1c',   '235'],
-      \ 'bg1':        ['#323c41',   '236'],
-      \ 'bg2':        ['#3a454a',   '237'],
-      \ 'bg3':        ['#445055',   '238'],
-      \ 'bg4':        ['#4c555b',   '239'],
-      \ 'bg5':        ['#53605c',   '240'],
-      \ 'bg_visual':  ['#503946',   '52'],
-      \ 'bg_red':     ['#4e3e43',   '52'],
-      \ 'bg_green':   ['#404d44',   '22'],
-      \ 'bg_blue':    ['#394f5a',   '17'],
-      \ 'bg_yellow':  ['#4a4940',   '136'],
-      \ }
-    " sour
+      \ } "}}}
+    " mint "{{{
+  else
     let palette2 = {
       \ 'fg':         ['#a7c080',   '142'],
       \ 'red':        ['#f85552',   '160'],
@@ -223,69 +259,6 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ 'statusline1':['#93b259',   '106'],
       \ 'statusline2':['#708089',   '242'],
       \ 'statusline3':['#e66868',   '160'],
-      \ 'none':       ['NONE',      'NONE']
-      \ } "}}}
-  elseif a:background ==# 'mocchi' "{{{
-    let palette1 = {
-      \ 'bg0':        ['#262626',   '235'],
-      \ 'bg1':        ['#323c41',   '236'],
-      \ 'bg2':        ['#3a454a',   '237'],
-      \ 'bg3':        ['#445055',   '238'],
-      \ 'bg4':        ['#4c555b',   '239'],
-      \ 'bg5':        ['#53605c',   '240'],
-      \ 'bg_visual':  ['#503946',   '52'],
-      \ 'bg_red':     ['#4e3e43',   '52'],
-      \ 'bg_green':   ['#404d44',   '22'],
-      \ 'bg_blue':    ['#394f5a',   '17'],
-      \ 'bg_yellow':  ['#4a4940',   '136'],
-      \ }
-    let palette2 = {
-      \ 'fg':         ['#a7c080',   '142'],
-      \ 'red':        ['#f85552',   '160'],
-      \ 'orange':     ['#f57d26',   '116'],
-      \ 'yellow':     ['#dfa000',   '136'],
-      \ 'green':      ['#8da101',   '106'],
-      \ 'aqua':       ['#35a77c',   '37'],
-      \ 'blue':       ['#3a94c5',   '32'],
-      \ 'purple':     ['#df69ba',   '162'],
-      \ 'grey0':      ['#a6b0a0',   '247'],
-      \ 'grey1':      ['#939f91',   '247'],
-      \ 'grey2':      ['#829181',   '247'],
-      \ 'statusline1':['#93b259',   '106'],
-      \ 'statusline2':['#708089',   '242'],
-      \ 'statusline3':['#e66868',   '160'],
-      \ 'none':       ['NONE',      'NONE']
-      \ } "}}}
-  elseif a:background ==# 'smile' "{{{
-    let palette1 = {
-      \ 'bg0':        ['#1c1c1c',   '235'],
-      \ 'bg1':        ['#323c41',   '236'],
-      \ 'bg2':        ['#3a454a',   '237'],
-      \ 'bg3':        ['#445055',   '238'],
-      \ 'bg4':        ['#4c555b',   '239'],
-      \ 'bg5':        ['#53605c',   '240'],
-      \ 'bg_visual':  ['#503946',   '52'],
-      \ 'bg_red':     ['#4e3e43',   '52'],
-      \ 'bg_green':   ['#404d44',   '22'],
-      \ 'bg_blue':    ['#394f5a',   '17'],
-      \ 'bg_yellow':  ['#4a4940',   '136'],
-      \ }
-    " powdered_sugar
-    let palette2 = {
-      \ 'fg':         ['#d3c6aa',   '223'],
-      \ 'red':        ['#e67e80',   '167'],
-      \ 'orange':     ['#e69875',   '208'],
-      \ 'yellow':     ['#dbbc7f',   '214'],
-      \ 'green':      ['#a7c080',   '142'],
-      \ 'aqua':       ['#83c092',   '108'],
-      \ 'blue':       ['#7fbbb3',   '109'],
-      \ 'purple':     ['#d699b6',   '175'],
-      \ 'grey0':      ['#7a8478',   '243'],
-      \ 'grey1':      ['#859289',   '245'],
-      \ 'grey2':      ['#9da9a0',   '247'],
-      \ 'statusline1':['#a7c080',   '142'],
-      \ 'statusline2':['#d3c6aa',   '223'],
-      \ 'statusline3':['#e67e80',   '167'],
       \ 'none':       ['NONE',      'NONE']
       \ } "}}}
   endif

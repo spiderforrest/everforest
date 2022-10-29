@@ -175,7 +175,7 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ 'bg_blue':    ['#394f5a',   '17'],
       \ 'bg_yellow':  ['#4a4940',   '136'],
       \ }
-  let spidercolorsActive = 'true' "}}}
+  let spidercolorsActive = v:true "}}}
   elseif a:background ==# 'cocoa' "{{{
     let palette1 = {
       \ 'bg0':        ['#262626',   '235'],
@@ -190,7 +190,7 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ 'bg_blue':    ['#394f5a',   '17'],
       \ 'bg_yellow':  ['#4a4940',   '136'],
       \ }
-  let spidercolorsActive = 'true' "}}}
+  let spidercolorsActive = v:true "}}}
   elseif a:background ==# 'cookie' "{{{
     let palette1 = {
       \ 'bg0':        ['#3f3f3f',   '235'],
@@ -205,7 +205,7 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ 'bg_blue':    ['#394f5a',   '17'],
       \ 'bg_yellow':  ['#4a4940',   '136'],
       \ }
-  let spidercolorsActive = 'true' "}}}
+  let spidercolorsActive = v:true "}}}
     " chocolate "{{{
   else
     let palette1 = {
@@ -221,10 +221,10 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ 'bg_blue':    ['#394f5a',   '17'],
       \ 'bg_yellow':  ['#4a4940',   '136'],
       \ }
-  let spidercolorsActive = 'true' "}}}
+  let spidercolorsActive = v:true "}}}
   endif
 
-  if &background ==# 'light' && spidercolorsActive ==# 'true' "{{{
+  if &background ==# 'light' && spidercolorsActive ==# v:true "{{{
     let palette2 = {
       \ 'fg':         ['#d3c6aa',   '223'],
       \ 'red':        ['#e67e80',   '167'],
@@ -242,7 +242,7 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ 'statusline3':['#e67e80',   '167'],
       \ 'none':       ['NONE',      'NONE']
       \ } "}}}
-  elseif &background ==# 'dark' && spidercolorsActive ==# 'true' "{{{
+  elseif &background ==# 'dark' && spidercolorsActive ==# v:true "{{{
     let palette2 = {
       \ 'fg':         ['#5c6a72',   '242'],
       \ 'red':        ['#f85552',   '160'],
@@ -261,7 +261,7 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ 'none':       ['NONE',      'NONE']
       \ } "}}}
     " mint "{{{
-  elseif spidercolorsActive ==# 'true'
+  elseif spidercolorsActive ==# v:true
     let palette2 = {
       \ 'fg':         ['#a7c080',   '142'],
       \ 'red':        ['#f85552',   '160'],

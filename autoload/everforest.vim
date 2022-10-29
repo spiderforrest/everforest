@@ -174,7 +174,8 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ 'bg_green':   ['#404d44',   '22'],
       \ 'bg_blue':    ['#394f5a',   '17'],
       \ 'bg_yellow':  ['#4a4940',   '136'],
-      \ } "}}}
+      \ }
+  let spidercolorsActive = 'true' "}}}
   elseif a:background ==# 'cookie' "{{{
     let palette1 = {
       \ 'bg0':        ['#262626',   '235'],
@@ -188,7 +189,8 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ 'bg_green':   ['#404d44',   '22'],
       \ 'bg_blue':    ['#394f5a',   '17'],
       \ 'bg_yellow':  ['#4a4940',   '136'],
-      \ } "}}}
+      \ }
+  let spidercolorsActive = 'true' "}}}
     " chocolate "{{{
   else
     let palette1 = {
@@ -203,10 +205,11 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ 'bg_green':   ['#404d44',   '22'],
       \ 'bg_blue':    ['#394f5a',   '17'],
       \ 'bg_yellow':  ['#4a4940',   '136'],
-      \ } "}}}
+      \ }
+  let spidercolorsActive = 'true' "}}}
   endif
 
-  if &background ==# 'light' "{{{
+  if &background ==# 'light' && spidercolorsActive ==# 'true' "{{{
     let palette2 = {
       \ 'fg':         ['#d3c6aa',   '223'],
       \ 'red':        ['#e67e80',   '167'],
@@ -224,7 +227,7 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ 'statusline3':['#e67e80',   '167'],
       \ 'none':       ['NONE',      'NONE']
       \ } "}}}
-  elseif &background ==# 'dark' "{{{
+  elseif &background ==# 'dark' && spidercolorsActive ==# 'true' "{{{
     let palette2 = {
       \ 'fg':         ['#5c6a72',   '242'],
       \ 'red':        ['#f85552',   '160'],
@@ -243,7 +246,7 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ 'none':       ['NONE',      'NONE']
       \ } "}}}
     " mint "{{{
-  else
+  elseif spidercolorsActive ==# 'true'
     let palette2 = {
       \ 'fg':         ['#a7c080',   '142'],
       \ 'red':        ['#f85552',   '160'],

@@ -3,8 +3,9 @@
 </h1>
 
 ## Fork info
-Spider: I've added three by three options, accessable with `set background=light|dark| `, and
-`g:everforest_background='gelatin'|'cookie'|'chocolate'`.
+Spider: I've added three by three options, accessible with `set background= |light|dark`, and
+`g:everforest_background='gelatin'|'cookie'|'chocolate'`. You can still use all the stock everforest
+colorschemes, my `background` options only take effect if gelatin, cookie, or chocolate is active.
 ![3x3 of color themes](././spiderAdditions.png)
 
 |        |                                      𝐃𝐚𝐫𝐤                                      |                                      𝐋𝐢𝐠𝐡𝐭                                       |

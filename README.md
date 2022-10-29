@@ -2,6 +2,11 @@
 𝐄𝐯𝐞𝐫𝐟𝐨𝐫𝐞𝐬𝐭
 </h1>
 
+## Fork info
+Spider: I've added three by three options, accessable with `set background=`` ``light``dark`, and
+`g:everforest_background=``'gelatin'``'cookie'``'chocolate'`.
+![3x3 of color themes](././spiderAdditions.png)
+
 |        |                                      𝐃𝐚𝐫𝐤                                      |                                      𝐋𝐢𝐠𝐡𝐭                                       |
 | :----: | :----------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
 |  𝐇𝐚𝐫𝐝  |   ![hard-dark](https://gitlab.com/sainnhe/img/-/raw/master/fn-dark-hard.png)   |   ![hard-light](https://gitlab.com/sainnhe/img/-/raw/master/fn-light-hard.png)   |

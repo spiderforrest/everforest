@@ -4,7 +4,7 @@
 
 ## Fork info
 Spider: I've added three by three options, accessible with `set background= |light|dark`, and
-`g:everforest_background='gelatin'|'cookie'|'chocolate'`. You can still use all the stock everforest
+`g:everforest_background='gelatin'|'cookie'|'chocolate'|'cocoa'`(last not pictured. You can still use all the stock everforest
 colorschemes, my `background` options only take effect if gelatin, cookie, or chocolate is active.
 ![3x3 of color themes](././spiderAdditions.png)
 

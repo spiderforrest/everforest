@@ -191,6 +191,21 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ 'bg_yellow':  ['#4a4940',   '136'],
       \ }
   let spidercolorsActive = 'true' "}}}
+  elseif a:background ==# 'cocoa' "{{{
+    let palette1 = {
+      \ 'bg0':        ['#3f3f3f',   '235'],
+      \ 'bg1':        ['#323c41',   '236'],
+      \ 'bg2':        ['#3a454a',   '237'],
+      \ 'bg3':        ['#445055',   '238'],
+      \ 'bg4':        ['#4c555b',   '239'],
+      \ 'bg5':        ['#53605c',   '240'],
+      \ 'bg_visual':  ['#503946',   '52'],
+      \ 'bg_red':     ['#4e3e43',   '52'],
+      \ 'bg_green':   ['#404d44',   '22'],
+      \ 'bg_blue':    ['#394f5a',   '17'],
+      \ 'bg_yellow':  ['#4a4940',   '136'],
+      \ }
+  let spidercolorsActive = 'true' "}}}
     " chocolate "{{{
   else
     let palette1 = {

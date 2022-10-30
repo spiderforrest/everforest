@@ -244,7 +244,7 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ } "}}}
   elseif &background ==# 'dark' && spidercolorsActive ==# v:true "{{{
     let palette2 = {
-      \ 'fg':         ['#5c6a72',   '242'],
+      \ 'fg':         ['#d3c6aa',   '223'],
       \ 'red':        ['#f85552',   '160'],
       \ 'orange':     ['#f57d26',   '116'],
       \ 'yellow':     ['#dfa000',   '136'],

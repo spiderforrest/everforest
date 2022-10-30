@@ -176,7 +176,7 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ 'bg_yellow':  ['#4a4940',   '136'],
       \ }
   let spidercolorsActive = v:true "}}}
-  elseif a:background ==# 'cocoa' "{{{
+  elseif a:background ==# 'cookie' "{{{
     let palette1 = {
       \ 'bg0':        ['#262626',   '235'],
       \ 'bg1':        ['#323c41',   '236'],
@@ -191,7 +191,7 @@ function! everforest#get_palette(background, colors_override) "{{{
       \ 'bg_yellow':  ['#4a4940',   '136'],
       \ }
   let spidercolorsActive = v:true "}}}
-  elseif a:background ==# 'cookie' "{{{
+  elseif a:background ==# 'cocoa' "{{{
     let palette1 = {
       \ 'bg0':        ['#3f3f3f',   '235'],
       \ 'bg1':        ['#323c41',   '236'],

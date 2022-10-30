@@ -1,6 +1,7 @@
 # Vim
 doc/tags
 after/syntax
+~/
 
 # System
 .DS_Store
